@@ -1,23 +1,47 @@
-const menuBtn = document.getElementById("menuBtn");
-const sidebar = document.getElementById("sidebar");
-const overlay = document.getElementById("overlay");
+const menuBtn=document.getElementById("menuBtn");
+const sidebar=document.getElementById("sidebar");
+const overlay=document.getElementById("overlay");
 
-function openMenu() {
-  sidebar.classList.add("open");
-  overlay.classList.add("show");
+function openMenu(){
+sidebar.classList.add("open");
+overlay.classList.add("show");
 }
 
-function closeMenu() {
-  sidebar.classList.remove("open");
-  overlay.classList.remove("show");
+function closeMenu(){
+sidebar.classList.remove("open");
+overlay.classList.remove("show");
 }
 
-menuBtn?.addEventListener("click", () => {
-  sidebar.classList.contains("open") ? closeMenu() : openMenu();
+menuBtn.onclick=()=>{
+
+sidebar.classList.contains("open")
+?closeMenu()
+:openMenu();
+
+};
+
+overlay.onclick=closeMenu;
+
+document.querySelectorAll("a").forEach(link=>{
+
+if(link.href){
+
+link.addEventListener("click",function(e){
+
+if(link.target==="_blank") return;
+
+e.preventDefault();
+
+document.body.style.opacity="0";
+
+setTimeout(()=>{
+
+window.location=link.href;
+
+},350);
+
 });
 
-overlay?.addEventListener("click", closeMenu);
+}
 
-document.querySelectorAll(".sidebar a").forEach(link => {
-  link.addEventListener("click", closeMenu);
 });
