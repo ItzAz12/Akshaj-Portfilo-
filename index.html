@@ -1,121 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Digital Book</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+<title>Portfolio | Home</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 
-    <script defer src="script.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+
+<script defer src="js/script.js"></script>
 </head>
+
 <body>
 
-<div class="background"></div>
+<div id="loader">
+<div class="book">
+<div class="page"></div>
+<div class="page"></div>
+<div class="page"></div>
+</div>
+</div>
+
+<div id="particles"></div>
 
 <header>
 
 <div class="logo">
-📖 My Portfolio
+Portfolio
 </div>
 
-<div class="menu-button" id="menuButton">
+<nav>
 
-<span></span>
-<span></span>
-<span></span>
+<a href="index.html" class="active">Home</a>
 
-</div>
+<a href="experience.html">Experience</a>
 
-<nav id="sidebar">
+<a href="socials.html">Socials</a>
 
-<a href="index.html">🏠 Home</a>
+<a href="servers.html">Servers</a>
 
-<a href="experience.html">📜 Experience</a>
-
-<a href="socials.html">🌐 Socials</a>
-
-<a href="servers.html">🖥 Servers</a>
-
-<a href="team.html">👥 Team</a>
+<a href="team.html">Team</a>
 
 </nav>
 
+<div class="menu-btn">
+☰
+</div>
+
 </header>
 
-<main>
+<section class="hero">
 
-<div class="book">
+<div class="hero-left">
 
-<div class="page">
+<h3>Hello There 👋</h3>
 
-<h1>Your Name</h1>
-
-<h2>Digital Portfolio</h2>
-
-<p>
-
-Welcome to my personal portfolio.
-
-This website is designed as a realistic digital book.
-
-Use the menu in the top-right corner to explore different chapters.
-
-</p>
-
-<hr>
-
-<section>
-
-<h3>About Me</h3>
+<h1>
+I'm <span>Your Name</span>
+</h1>
 
 <p>
 
-Replace this with your biography.
+Professional Website Developer,
+Discord Manager,
+Minecraft Developer,
+UI/UX Designer.
 
-Talk about your experience, skills and achievements.
+Creating modern experiences with creativity.
 
 </p>
-
-</section>
-
-<section>
-
-<h3>Skills</h3>
-
-<ul>
-
-<li>Website Development</li>
-
-<li>Discord Management</li>
-
-<li>Minecraft Development</li>
-
-<li>UI / UX Design</li>
-
-</ul>
-
-</section>
 
 <div class="buttons">
 
-<a href="experience.html">
+<a href="experience.html" class="btn primary">
+Explore →
+</a>
 
-<button>
-Open Book →
-</button>
-
+<a href="socials.html" class="btn">
+Contact Me
 </a>
 
 </div>
 
 </div>
 
+<div class="hero-right">
+
+<div class="profile-card">
+
+<img src="assets/profile.png">
+
+<div class="glow"></div>
+
 </div>
 
-</main>
+</div>
+
+</section>
+
+<section class="stats">
+
+<div class="card">
+
+<h2>3.8+</h2>
+
+<p>Years Experience</p>
+
+</div>
+
+<div class="card">
+
+<h2>150+</h2>
+
+<p>Projects Completed</p>
+
+</div>
+
+<div class="card">
+
+<h2>300+</h2>
+
+<p>Clients Helped</p>
+
+</div>
+
+<div class="card">
+
+<h2>24/7</h2>
+
+<p>Support</p>
+
+</div>
+
+</section>
+
+<section class="about">
+
+<h2>About Me</h2>
+
+<p>
+
+I build professional websites,
+manage Discord communities,
+develop Minecraft projects,
+and create beautiful user experiences.
+
+My goal is delivering quality work
+with premium design and performance.
+
+</p>
+
+</section>
+
+<section class="services">
+
+<h2>What I Do</h2>
+
+<div class="service-grid">
+
+<div class="service">
+
+<h3>Website Development</h3>
+
+<p>
+Responsive modern websites.
+</p>
+
+</div>
+
+<div class="service">
+
+<h3>Discord Management</h3>
+
+<p>
+Community management and automation.
+</p>
+
+</div>
+
+<div class="service">
+
+<h3>Minecraft Development</h3>
+
+<p>
+Server setup and development.
+</p>
+
+</div>
+
+<div class="service">
+
+<h3>UI/UX Design</h3>
+
+<p>
+Professional interfaces.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 Portfolio
+
+</p>
+
+</footer>
 
 </body>
 </html>
